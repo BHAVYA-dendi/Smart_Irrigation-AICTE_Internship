@@ -1,31 +1,55 @@
-# Smart Irrigation – AICTE Internship Project
+# Smart/Automated Irrigation using Soil Moisture and Weather Data
 
-This project is part of the AICTE Virtual Internship program on Artificial Intelligence.
+This project is developed as part of the **AICTE Internship Program**.  
+It uses machine learning to predict the ON/OFF status of sprinklers based on **20 soil moisture and weather sensor inputs**.
 
-## Project Description
+## 🌱 Objective
 
-The Smart Irrigation system uses a machine learning model to assist in automating irrigation decisions based on environmental data like temperature, humidity, and soil moisture.
+To automate irrigation by predicting sprinkler status using AI, optimizing water usage and supporting precision farming.
 
-## Files Included
+## 📂 Files Included
 
-- `Smart_Irrigation1.ipynb` – Jupyter Notebook with the implementation
-- `irrigation_machine.csv` – Dataset used for training the model
-- `README.md` – Project overview and instructions
+- `Farm_Irrigation_System.pkl` – Trained machine learning model  
+- `Smart_Irrigation1.ipynb` – Jupyter notebook for model training  
+- `irrigation_machine.csv` – Dataset used for training  
+- `app.py` – Streamlit web app for sprinkler prediction  
+- `README.md` – Project documentation
 
-## Technologies Used
+## 🛠️ Tools & Technologies Used
 
-- Python  
-- Pandas  
-- Scikit-learn  
-- Matplotlib  
-- Google Colab
+- **Language**: Python  
+- **Platform**: Google Colab, VS Code  
+- **Environment**: Jupyter Notebook, Streamlit  
+- **Libraries**: scikit-learn, pandas, numpy, joblib, streamlit  
+- **Interface**: Streamlit Web App  
+- **Model**: Random Forest Classifier  
+ **Dataset**: Custom/generated soil moisture and weather data  
+- **Version Control**: Git & GitHub
 
-## How to Run
+## ⚙️ Methodology
 
-1. Open the notebook in [Google Colab](https://colab.research.google.com).
-2. Upload the `irrigation_machine.csv` file when prompted.
-3. Run all cells to train the model and view predictions.
+- **Data Collection**: Sensor data with 20 input features.
+- **Preprocessing**: Scaling inputs between 0 and 1.
+- **Model Training**: Random Forest Classifier to predict 3 sprinkler statuses.
+- **Model Deployment**: Exported using `joblib` and integrated into a Streamlit app.
+- **User Interaction**: Web sliders allow manual input of sensor values for real-time prediction.
 
-## Purpose
+## 🚀 How to Run
 
-To apply basic machine learning techniques to real-world problems as part of the AICTE internship learning experience.
+1. Clone this repo or download the files.
+2. Ensure `Farm_Irrigation_System.pkl` and `app.py` are in the same folder.
+3. Open terminal and run:
+   ```bash
+   streamlit run app.py
+4. Enter sensor valuesvand click Predict Sprinklers
+
+## 💧 Sample Output
+
+Sprinkler 0: ON 
+Sprinkler 1: OFF 
+Sprinkler 2: ON
+
+## 👩‍💻 Developed By
+
+**Dendi Bhavya Reddy**  
+For **AICTE Internship Project**
